@@ -1,0 +1,21 @@
+from terminal make sure you "cd" (change directory) to the project folder
+
+for windows
+	first run
+	pip install pyinstaller
+
+	then
+	pip install tqdm
+
+	then
+	pyinstaller -c -F --add-data "44DBpk.zip;." --add-data "word.txt;." --add-data "iconWhite.ico;." --icon=iconWhite.ico 44db.py
+
+for mac/unix/linux
+	first run
+	pip install pyinstaller
+
+	then
+	pip install tqdm
+
+	then
+	pyinstaller -c -F --add-data "44DBpk.zip:." --add-data "word.txt:." --add-data "iconWhite.ico;." --icon=iconWhite.ico 44db.py
